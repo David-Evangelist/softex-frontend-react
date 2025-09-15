@@ -1,0 +1,37 @@
+section {
+  margin-bottom: 80px;
+}
+
+#nav,
+section  {
+  padding: 10px;
+}
+
+#nav,
+#painel {
+  background-color: rgba(168, 89, 241, 0.795);
+  color: #fff;
+  text-align: center;
+}
+
+#painel {
+  display: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+
+.circle {
+  background-color: rgba(127, 255, 212, 0.692);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  transition: transform 0.2s ease-in, backgroun-color 0.2s ease-in;
+}
+
+.circle:hover {
+  background-color: rgba(127, 255, 212, 0.938);
+  transform: scale(1.2);
+}

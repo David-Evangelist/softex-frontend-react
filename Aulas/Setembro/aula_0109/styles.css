@@ -1,0 +1,106 @@
+/* RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+p,
+li {
+  font-size: 1.2rem;
+}
+
+/* ESTILIZAÇÕES */
+
+body {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  padding: 2.5rem;
+  height: 100svh;
+  background: linear-gradient(
+    130deg,
+    rgba(91, 228, 210, 0.527),
+    rgba(0, 128, 128, 0.973)
+  );
+}
+
+button {
+  width: max-content;
+  padding: 0.8rem 2.5rem;
+  border-style: none;
+  border-radius: 1rem;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+button:hover {
+  background-color: rgba(77, 10, 184, 0.527);
+  color: aliceblue;
+}
+
+.acessar-link {
+  a {
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+    transition: color 0.5s ease, ;
+  }
+
+  a:hover {
+    color: rgba(77, 10, 184, 0.527);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
+
+.container-images {
+  display: flex;
+  flex-flow: row;
+  gap: 1.5rem;
+}
+
+.jolly-roger {
+  width: 25rem;
+  border: 1rem ridge rgb(156, 184, 201);
+}
+
+.leme {
+  width: 15rem;
+  animation: rotacionar 5s linear infinite;
+}
+
+.lista-ul,
+.lista-ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  ul,
+  ol {
+    padding-left: 2rem;
+  }
+}
+
+@keyframes rotacionar {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

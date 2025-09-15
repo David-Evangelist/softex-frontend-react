@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercícios - 11/08</title>
+  </head>
+  <body>
+    <script>
+      let notas = [];
+
+      notas.push(Number(prompt("Informe a 1ª nota: ")));
+      notas.push(Number(prompt("Informe a 2ª nota: ")));
+      notas.push(Number(prompt("Informe a 3ª nota: ")));
+      console.log(notas);
+
+      let media = (notas[0] + notas[1] + notas[2]) / notas.length;
+      console.log(media);
+
+      if (media >= 7) {
+        console.log(`Aluno aprovado!`);
+      } else {
+        console.log(`Aluno reprovado!`);
+      }
+    </script>
+  </body>
+</html>
