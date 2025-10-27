@@ -42,10 +42,10 @@ export class Usuario {
 
   public devolverLivro(livro: Livro) {
     if (!livro.disponivel) {
-      let indiceLivro = this.listaDeLivros.indexOf(livro);
+      const indexLivro = this.listaDeLivros.indexOf(livro);
 
-      if (indiceLivro !== -1) {
-        this.listaDeLivros.splice(indiceLivro, 1);
+      if (indexLivro !== -1) {
+        this.listaDeLivros.splice(indexLivro, 1);
         livro.disponivel = true;
         console.log(`Livro ${livro.titulo} foi devolvido com sucesso!`);
         console.log("");
